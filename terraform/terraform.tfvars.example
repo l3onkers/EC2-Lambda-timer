@@ -1,0 +1,14 @@
+# Valores de ejemplo para terraform.tfvars
+# Copia este archivo como terraform.tfvars y ajusta los valores
+
+aws_region          = "eu-west-1"
+function_name       = "ec2-auto-start-stop"
+schedule_expression = "cron(0 * * * ? *)"  # Cada hora
+default_timezone    = "Europe/Madrid"
+debug_mode          = false
+
+tags = {
+  Project     = "EC2-Auto-StartStop"
+  Environment = "production"
+  ManagedBy   = "Terraform"
+}
